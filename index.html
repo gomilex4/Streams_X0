@@ -1,1 +1,66 @@
-<h1>hello world!</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Principal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(270deg, red, green, blue);
+      background-size: 600% 600%;
+      animation: rgbBackground 10s infinite alternate;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    @keyframes rgbBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .catalogo {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      border-radius: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .catalogo button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background-color: #444;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .catalogo button:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="catalogo">
+    <button onclick="window.open('catalogo1.html', '_blank')">Catálogo 1</button>
+    <button onclick="window.open('catalogo2.html', '_blank')">Catálogo 2</button>
+    <button onclick="window.open('catalogo3.html', '_blank')">Catálogo 3</button>
+    <button onclick="window.open('catalogo4.html', '_blank')">Catálogo 4</button>
+    <button onclick="window.open('catalogo5.html', '_blank')">Catálogo 5</button>
+    <button onclick="window.open('catalogo6.html', '_blank')">Catálogo 6</button>
+    <button onclick="window.open('catalogo7.html', '_blank')">Catálogo 7</button>
+    <button onclick="window.open('catalogo8.html', '_blank')">Catálogo 8</button>
+    <button onclick="window.open('catalogo9.html', '_blank')">Catálogo 9</button>
+    <button onclick="window.open('catalogo10.html', '_blank')">Catálogo 10</button>
+  </div>
+</body>
+</html>
+
